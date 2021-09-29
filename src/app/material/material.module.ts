@@ -6,6 +6,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
 
 const materials = [
   MatButtonModule,
@@ -13,6 +15,8 @@ const materials = [
   MatSelectModule,
   MatFormFieldModule,
   MatMenuModule,
+  MatDividerModule,
+  MatCardModule,
 ];
 
 @NgModule({

@@ -1,0 +1,35 @@
+<ng-container *ngIf="dataBundle">
+    <div class="docs-carousel-content">
+        <div class="docs-carousel-content-wraper" [style]="carouselNewStyle">
+            <ng-container *ngFor="let item of dataBundle">
+                <ng-container *ngIf="item.icon">
+                    <a [href]="item.href" class="docs-carosel-link-item">
+                        <div class="docs-homepage-img-container">
+                            <img [src]="item.icon" alt="">
+                        </div>
+                        {{item.title}}
+                    </a>
+                </ng-container>
+                <ng-container *ngIf="item.desc">
+                    <a [href]="item.href" class="docs-carosel-link-item">
+                    <mat-card class="docs-homepage-guides-card">
+                        <mat-card-title>
+                            {{ item.title | translate }}
+                        </mat-card-title>
+                        <div class="docs-homepage-guides-card-divider"></div>
+                        <mat-card-content>{{ item.desc | translate }}</mat-card-content>
+                    </mat-card></a>
+                </ng-container>
+                
+            </ng-container>
+        </div>
+    </div>
+    <button [ngClass]="{'view': indexTag!=dataBundle.length, 'hide':indexTag==(dataBundle.length-3)}"
+        class="docs-carousel-btn-next" (click)="carouselForward()" mat-raised-button mat-icon-button>
+        <mat-icon>arrow_forward_ios_new</mat-icon>
+    </button>
+    <button [ngClass]="{'view': indexTag!=0, 'hide':indexTag==0}" class="docs-carousel-btn-pre"
+        (click)="carouselBackward()" mat-raised-button mat-icon-button>
+        <mat-icon>arrow_back_ios_new</mat-icon>
+    </button>
+</ng-container>

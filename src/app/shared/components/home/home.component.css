@@ -1,3 +1,197 @@
 body {
-    margin-top: 100px;
+    background: #fafafa;
 }
+
+.home-container {    
+    background: #3f51b5;
+    height: 420px;
+    overflow: hidden;
+    position: relative; 
+    
+}
+
+.home-container::before {
+    content: "";
+    position: absolute;
+    background-size: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 80% 20px;
+    opacity: .2;
+    background-image: url("/assets/img/homepage/angular-white-transparent.svg");
+}
+
+@media (max-width: 1200px) {
+    .home-container {
+        height: 330px;        
+    }    
+    .home-container::before{        
+        background-image: none;
+    }   
+}
+
+.docs-header-section {
+    position: relative;
+    width: 90%;
+    z-index: 0;
+    text-align: center;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.docs-headline {
+    color: #fff;
+}
+
+.docs-headline h1 {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 56px;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 56px;
+    margin: 15px 5px;
+}
+
+.docs-headline h2 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 15px 0 25px;
+}
+
+mat-divider {
+    display: block;
+    margin: 10px 0 10px 0;
+    border-top: 2px solid rgba(0, 0, 0, .12);
+    width: 100%
+}
+
+
+.doc-header-start {
+    text-align: center;
+    margin: 50px 0 0;
+    color: #3f51b5;
+}
+
+main {
+    background: #fafafa;
+}
+
+.docs-homepage-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1080px;
+    width: 75%;
+    margin: auto;    
+}
+
+.docs-homepage-row {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    color: rgba(0,0,0,.54);
+}
+
+.docs-homepage-row-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.docs-homepage-row-column h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 16px;
+    padding: 0;    
+}
+
+.docs-homepage-row-column-p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 24px;  
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 1em;  
+}
+
+.docs-homepage-featured {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    
+
+}
+.docs-homepage-Guides {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;    
+}
+
+.docs-homepage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.docs-homepage-header h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 16px;
+    padding: 0;
+    color: rgba(0,0,0,.54);
+}
+.docs-homepage-header a{
+    display: inline-flex;
+    align-items: center;
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+}
+
+.docs-help-support {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 40px;
+    color: rgba(0,0,0,.54);
+}
+
+.docs-help-support ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 18px 0;    
+}
+.docs-help-support-link {
+    text-align: center;
+    display: block;
+    font-weight: 500;
+}
+.docs-help-support-icon {
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+}
+.docs-help-support-description {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: rgba(0,0,0,.54);
+    padding: 8px;
+}
+
+
+
+

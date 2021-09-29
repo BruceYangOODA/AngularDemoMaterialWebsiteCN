@@ -1,0 +1,27 @@
+[
+    {
+        "title":"Datepicker",
+        "href":"",
+        "icon":"/assets/img/homepage/datepicker.scene.png"
+    },
+    {
+        "title":"Input",
+        "href":"",
+        "icon":"/assets/img/homepage/input.scene.png"
+    },
+    {
+        "title":"Slide toggle",
+        "href":"",
+        "icon":"/assets/img/homepage/slide-toggle.scene.png"
+    },
+    {
+        "title":"Slider",
+        "href":"",
+        "icon":"/assets/img/homepage/slider.scene.png"
+    },
+    {
+        "title":"Button",
+        "href":"",
+        "icon":"/assets/img/homepage/button.scene.png"
+    }
+]

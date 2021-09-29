@@ -8,6 +8,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { MaterialModule } from '../material/material.module';
 import { HomeComponent } from './components/home/home.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '../assets/i18n/','.json');
@@ -16,7 +18,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    CarouselComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,  
@@ -34,7 +38,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   exports:[
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

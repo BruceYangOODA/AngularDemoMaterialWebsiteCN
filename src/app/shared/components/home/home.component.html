@@ -1,9 +1,103 @@
-<body>
-    
+<div class="home-container"
+    [style]="defaultSetting()">
+    <div class="docs-header-section">
+        <div class="docs-headline">
+            <h1 mat-h1>Angular Material</h1>
+            <h2>Material Design components for Angular</h2>
+        </div>
+        <div class="doc-header-start">
+            <a mat-raised-button 
+                href="guide/getting-started">
+                <span>{{ 'Get Started' | translate }}</span>
+            </a>
+        </div>
+    </div>
+</div>
+<main class="docs-homepage-promo">
+    <div class="docs-homepage-row">
+        <div class="docs-homepage-row-column">
+            <h2>{{ 'High quality' | translate }}</h2>
+            <p class="docs-homepage-row-column-p">{{ 'High quality_P1' | translate }}</p>
+            <p class="docs-homepage-row-column-p">{{ 'High quality_P2' | translate }}</p>
+        </div>
+        <div class="docs-homepage-row-column">
+            <h2>{{ 'Versatile' | translate }}</h2>
+            <p class="docs-homepage-row-column-p">{{ 'Versatile_P1' | translate }}</p>
+            <p class="docs-homepage-row-column-p">{{ 'Versatile_P2' | translate }}</p>
+        </div>
+        <div class="docs-homepage-row-column">
+            <h2>{{ 'Frictionless' | translate }}</h2>
+            <p class="docs-homepage-row-column-p">{{ 'Frictionless_P1' | translate }}</p>
+            <p class="docs-homepage-row-column-p">{{ 'Frictionless_P2' | translate }}</p>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="docs-homepage-featured">
+        <div class="docs-homepage-header">
+            <h2>{{ 'Featured components' | translate }}</h2>
+            <a href="" class="">{{ 'View all featured' | translate }}<mat-icon>
+                    chevron_right
+                </mat-icon></a>
+        </div>
+        <app-carousel [dataBundle]="(dataBundle$ | async)"></app-carousel>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="docs-homepage-Guides">
+        <div class="docs-homepage-header">
+            <h2>{{ 'Guides' | translate }}</h2>
+            <a href="" class="">{{ 'View all guides' | translate }}<mat-icon>
+                    chevron_right
+                </mat-icon></a>
+        </div>
+        <app-carousel [dataBundle]="(dataBundle2$ | async)"></app-carousel>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="docs-help-support">
+        <ul>
+            <li>
+                <a class="docs-help-support-link" href="">
+                    <img class="docs-help-support-icon" src="/assets/img/homepage/stackoverflow-logo.svg"
+                        alt="StackOverflow icon" loading="lazy">
+                    StackOverFLow
+                    <div class="docs-help-support-description">
+                        Questions tagged with <a href="">angular-material</a> or <a href="">
+                            angular-cdk
+                        </a>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="docs-help-support-link" href="">
+                    <img class="docs-help-support-icon" src="/assets/img/homepage/discord-logo.svg" alt="Discord icon"
+                        loading="lazy">
+                    Discord
+                </a>
 
-<p>home works!</p>
-<h1><p>home works!</p></h1>
-<h1><p>home works!</p></h1>
-<h1><p>home works!</p></h1>
-<h1><p>home works!</p></h1>
-</body>
+                <div class="docs-help-support-description">Angular Community on Discord</div>
+
+            </li>
+            <li>
+                <a class="docs-help-support-link" href="">
+                    <img class="docs-help-support-icon" src="/assets/img/homepage/google-groups-logo.png"
+                        alt="Google Groups icon" loading="lazy">Google Groups
+                </a>
+                <div class="docs-help-support-description">Angular Components discussion forum</div>
+            </li>
+            <li>
+                <a class="docs-help-support-link" href="">
+                    <img class="docs-help-support-icon" src="/assets/img/homepage/twitter-logo.svg" alt="">
+                    Twitter
+                </a>
+                <div class="docs-help-support-description">Connect with @angular on Twitter</div>
+            </li>
+            <li>
+                <a class="docs-help-support-link" href="">
+                    <img class="docs-help-support-icon" src="/assets/img/homepage/angular-logo.svg" alt="">
+                    Angular Blog
+                </a>
+                <div class="docs-help-support-description">News and Tips from the Angular Team</div>
+            </li>
+        </ul>
+    </div>    
+</main>
+<app-footer></app-footer>

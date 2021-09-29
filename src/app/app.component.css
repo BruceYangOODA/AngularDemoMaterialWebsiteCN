@@ -1,8 +1,15 @@
 .docs-app-background {
     background: #fafafa;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     font-family: Roboto,"Microsoft JhengHei",Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
     margin: 0;        
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:underline
 }
 

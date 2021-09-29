@@ -1,5 +1,47 @@
 {
     "Components":"Components",
     "CDK":"CDK",
-    "Guides":"Guides"
+    "Guides":"Guides",
+    "Get Started": "Get Started",
+    "High quality": "High quality",
+    "High quality_P1": "Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.",
+    "High quality_P2": "Straightforward APIs with consistent cross platform behaviour.",
+    "Versatile": "Versatile",
+    "Versatile_P1": "Provide tools that help developers build their own custom components with common interaction patterns.",
+    "Versatile_P2": "Customizable within the bounds of the Material Design specification.",
+    "Frictionless": "Frictionless",
+    "Frictionless_P1": "Built by the Angular team to integrate seamlessly with Angular.",
+    "Frictionless_P2": "Start from scratch or drop into your existing applications.",
+    "Featured components": "Featured components",
+    "View all featured": "View all components",    
+    "View all guides": "View all Guides",
+    "Getting started": "Getting started",
+    "Getting started_desc": "Add Angular Material to your project!",
+    "Schematics": "Schematics",
+    "Schematics_desc": "Use schematics to quickly generate views with Material Design components.",
+    "Theming Angular Material": "Theming Angular Material",
+    "Theming Angular Material_desc": "Customize your application with Angular Material's theming system.",
+    "Theming your own components": "Theming your own components",
+    "Theming your own components_desc": "Use Angular Material's theming system in your own custom components.",
+    "Customizing Typography": "Customizing Typography",
+    "Customizing Typography_desc": "Configure the typography settings for Angular Material components.",
+    "Customizing component styles": "Customizing component styles",
+    "Customizing component styles_desc": "Understand how to approach style customization with Angular Material components.",
+    "Custom form field control": "Custom form field control",
+    "Custom form field control_desc": "Build a custom control that integrates with `<mat-form-field>`.",
+    "Elevation helpers": "Elevation helpers",
+    "Elevation helpers_desc": "Enhance your components with elevation and depth.",
+    "Custom stepper using the CdkStepper": "Custom stepper using the CdkStepper",
+    "Custom stepper using the CdkStepper_desc": "Create a custom stepper components using Angular CDK.",
+    "Testing with component harnesses": "Testing with component harnesses",
+    "Testing with component harnesses_desc": "Write tests with component harnesses for convenience and meaningful results.",
+    "Learn": "Learn",
+    "Current Version": "Current Version"
+    
+
+
+
+
+    
+
 }

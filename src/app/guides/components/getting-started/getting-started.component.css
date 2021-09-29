@@ -1,0 +1,35 @@
+.main-content {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 70px;
+}
+
+.docs-primary-header {
+    background: #3f51b5;
+    padding-left: 20px;    
+}
+.docs-primary-header h1 {
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    padding: 28px 8px;
+    font-size: 20px;
+}
+
+.docs-guide-wrapper{
+    padding: 20px 70px 0;
+    display: block;
+    text-align: center;
+}
+
+.docs-guide-toc-and-content {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 940px;
+    margin:  0 auto;
+    min-height: 100vh;
+    background-color: violet;
+}
