@@ -1,0 +1,35 @@
+.docs-navbar {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: #3f51b5;    
+    display: flex;
+    justify-content: space-between;    
+    height: 70px;     
+}
+
+.nav-links {
+    align-self:center;      
+    margin-left: 3rem;
+}
+.nav-options {
+    margin-right: 9rem;
+    align-self:center;
+}
+
+.docs-angular-logo {
+    height: 26px;
+    margin: 0 4px 3px 0;
+    vertical-align: middle;
+}
+.docs-material-link {
+    color: white;    
+    font-size: 20px;    
+    font-weight: 500;
+}
+.docs-material-link:hover {
+    background-color: #263bad;
+    color: rgb(243, 121, 212);
+}

@@ -1,0 +1,36 @@
+
+<div class="mat-elevation-z6 docs-navbar">
+    <div class="nav-links">
+    <a class="docs-material-link" mat-button mat-button-base routerlink="/" href="/" tabindex="0">
+        <span>
+            <img class="docs-angular-logo" src="/assets/img/homepage/angular-white-transparent.svg" alt="">
+            <span>Material</span>
+        </span>
+    </a>
+    <a class="docs-material-link" mat-button mat-button-base routerlink="/" href="/" tabindex="0">
+        <span>            
+            <span>{{ 'Components' | translate }}</span>
+        </span>
+    </a>
+    <a class="docs-material-link" mat-button mat-button-base routerlink="/" href="/" tabindex="0">
+        <span>            
+            <span>{{ 'CDK' | translate }}</span>
+        </span>
+    </a>
+    <a class="docs-material-link" mat-button mat-button-base routerlink="/" href="/" tabindex="0">
+        <span>            
+            <span>{{ 'Guides'| translate }}</span>
+        </span>
+    </a>
+    </div>
+
+    <div class="nav-options">        
+        <button mat-button [matMenuTriggerFor]="i18nMenu">
+            <mat-icon>language</mat-icon> 
+            <mat-menu #i18nMenu="matMenu">
+                <button mat-menu-item (click)="selectLanguage('en')">English</button>
+                <button mat-menu-item (click)="selectLanguage('cn')">中文</button>
+              </mat-menu>        
+        </button>     
+    </div>
+</div>
